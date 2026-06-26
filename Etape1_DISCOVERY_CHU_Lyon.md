@@ -342,7 +342,7 @@ Au moins 3 KPI permettant une comparaison **avant / après** pour la solution re
 | 1 | **Délai moyen de compte-rendu** | Temps entre l'acquisition de l'image et la mise à disposition du compte-rendu | 24-48 h _(estimation)_ | **−40 %** |
 | 2 | **Temps de lecture par radio** | Durée moyenne d'interprétation d'une radio thoracique | ~3-4 min _(estimation)_ | **−30 %** |
 | 3 | **Sensibilité sur signes critiques** | Vrais positifs / (VP + faux négatifs) sur pneumothorax, foyer, nodule | à mesurer | **≥ 95 %** |
-| 4 | **Délai de priorisation des cas urgents** | % d'examens à risque signalés et relus en < 1 h | non outillé | **> 90 %** |
+| 4 | **Délai de relecture des cas urgents** | Délai médian entre l'arrivée de l'examen dans le PACS et sa relecture, pour les examens qui se révèlent **urgents / critiques** | à mesurer sur échantillon rétrospectif _(estimation)_ | **≤ 1 h** |
 | 5 | **Satisfaction des utilisateurs** | Score moyen radiologues + prescripteurs (enquête /5) | à mesurer | **> 4 / 5** |
 
 > KPI 1, 2 et 5 mesurent le **gain opérationnel et l'adoption** ; KPI 3 et 4 garantissent que la **fiabilité et la sécurité** ne sont pas dégradées (un gain de vitesse ne doit jamais se faire au prix d'un faux négatif).
