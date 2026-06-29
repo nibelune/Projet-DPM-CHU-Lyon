@@ -26,9 +26,8 @@
 
 1. **Classification automatique** de la radiographie thoracique (normal / pneumonie / Covid-19) avec un **score de confiance**.
 2. **Détection et localisation des signes critiques** (foyer, épanchement pleural, pneumothorax, nodule) via une **carte de chaleur (Grad-CAM)** superposée à l'image.
-3. **Score de priorité + ré-ordonnancement de la worklist PACS** : les examens à risque élevé remontent en haut de la file.
-4. **Restitution intégrée au PACS** (pas de nouvel outil à ouvrir) + **validation du radiologue** (human-in-the-loop).
-5. **Boucle de feedback** : le radiologue valide / corrige la prédiction, ce qui alimente l'amélioration continue du modèle.
+3. **Restitution intégrée au PACS** (pas de nouvel outil à ouvrir) + **validation du radiologue** (human-in-the-loop).
+4. **Boucle de feedback** : le radiologue valide / corrige la prédiction, ce qui alimente l'amélioration continue du modèle.
 
 ### Scope (inclus / exclu)
 
@@ -36,7 +35,6 @@
 |---|---|
 | Radiographie thoracique **adulte, incidence de face** | Pédiatrie ; incidence de profil |
 | **3 classes** + signes critiques principaux | Autres pathologies thoraciques fines |
-| **Tri / priorisation** de la worklist PACS | Compte-rendu textuel automatique complet |
 | **Dashboard de supervision** (monitoring de base) | Autres modalités (scanner, IRM) |
 | Environnement **pilote** (1-2 services) | Déploiement multi-sites généralisé |
 | Score + carte de chaleur explicative | Intégration mobile / téléradiologie externe |
@@ -53,9 +51,8 @@
 flowchart LR
     X["Radio thoracique<br/>acquise"] --> Y["Arrivée dans le PACS"]
     Y --> Z["Inférence IA<br/>(≈ 1 min)"]
-    Z --> Q["Score de priorité<br/>+ classe + carte de chaleur"]
-    Q --> W["Worklist PACS réordonnée<br/>(urgences en haut)"]
-    W --> RV["Radiologue lit & valide<br/>(human-in-the-loop)"]
+    Z --> Q["Carte de chaleur"]
+    Q --> RV["Radiologue lit & valide<br/>(human-in-the-loop)"]
     RV --> CR["Compte-rendu"]
     RV -.feedback.-> FB["Base de feedback<br/>(amélioration du modèle)"]
 ```
